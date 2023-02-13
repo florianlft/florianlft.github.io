@@ -1,0 +1,21 @@
+
+body{
+    background: black;
+    color: white;
+    font-size: 45px;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+.header-title{
+    font-size: 30px;
+}
+
+
+.introduction{
+    font-size: 15px;
+}
+
+.imglogo{
+    height: 50px;
+    width: 50px
+}
