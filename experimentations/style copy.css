@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns:2fr auto auto;
+    gap: 24px;
+    align-items: end;
+    position: sticky;
+    top: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-right: 25px;
+}
+
+.header a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.projects{
+
+}
+
+
+.menu{
+    height: 50px;
+    width: 50px;
+}
+
+.project-large{
+}

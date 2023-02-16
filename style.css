@@ -1,0 +1,213 @@
+/* FONT FACE*/
+@font-face {
+    font-family: 'necto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Necto-Mono.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'texte';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Avenir\ Book.ttf);
+}
+@font-face {
+    font-family: 'textebold';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Avenir\ Heavy.ttf);
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+.strong{
+    font-family: 'textebold';
+
+}
+
+
+body{
+    font-family: sans-serif;
+    cursor: url('img/LOGOFLO.svg'), auto;
+}
+
+/*HEADER PRINCIPAL*/
+
+.header{
+    display: grid;
+    grid-template-columns:2fr auto auto;
+    gap: 24px;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-right: 25px;
+}
+
+.header a{
+    text-decoration: none;
+    color: currentColor;
+    font-family: 'necto';
+    font-size: 25px;
+}
+
+/* SOMMAIRE MENU PAGE PRINCIPAL */
+.titreprojects a{ 
+    text-decoration: none;
+    color: currentColor;
+    font-family: 'necto';
+    font-size: 100px;
+    margin-left: 100px;
+
+}
+
+/*icones header principal*/
+.menu{   
+    height: 40px;
+    width: 40px;
+}
+
+/* PAGE PROJET*/
+.projet-titre{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.projet-titre .p1{
+    font-family: 'necto';
+    font-size: 60px;
+    line-height: 1px;
+    margin-bottom: 40px;
+}
+.projet-titre .p2{
+    font-family: 'necto';
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/*GRID PROJET*/
+
+.grid{
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width:1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+}
+
+.minigrid{
+    max-width:1200px;
+    grid-template-rows:repeat(2, 250) ;
+    display: grid;
+    gap:25px;
+}
+
+.insect_3{
+    align-items: end;
+}
+.span-4{
+    grid-column: span 4;
+}
+
+.span-3{
+    grid-column: span 3;
+}
+
+.span-2{
+    grid-column: span 2;
+    
+}
+
+.span-1{
+    grid-column: span 1;
+    align-items:end;
+}
+
+
+
+.texte-projet{
+    font-family: 'texte';
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.sous-titre{
+    font-family: 'textebold';
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.hr{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+/* EFFETS SITE */
+
+.header a {
+    display: inline-block;
+    transition: all 350ms ease-out;
+    
+}
+
+header a:hover{
+    color: #010101;
+    transform: translate(0,-10px)
+}
+
+.gridsommaire{
+    display:grid;
+}
+
+.item{
+    /*font-family: 'necto';*/
+    font-size: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding:-200px;
+    border-bottom:2px solid #000;
+    background:rgb(255, 255, 255);
+    z-index:1;
+    background: rgba(255, 255, 255, 0.838);
+    transition:0.5s;
+  }
+
+.test{
+    background: none;
+}
+  
+.item.no-fx:hover{
+      background: rgba(255, 255, 255, 0.971);
+  }
+  
+.item span{
+    display:inline-block;
+    transform:translate(0,50px);
+    transition:0.3s;
+  }
+  
+.item:hover{
+    background: #fff;
+  }
+
+  .item:hover span{
+    transform:none;
+  }
