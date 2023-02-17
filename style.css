@@ -22,6 +22,7 @@
     src: url(fonts/Avenir\ Heavy.ttf);
 }
 
+
 a{
     text-decoration: none;
     color: currentColor;
@@ -31,6 +32,7 @@ img{
     max-width: 100%;
     height:auto;
 }
+/*texte*/
 
 .strong{
     font-family: 'textebold';
@@ -41,6 +43,45 @@ img{
 body{
     font-family: sans-serif;
     cursor: url('img/LOGOFLO.svg'), auto;
+}
+
+.texte-projet{
+    font-family: 'texte';
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.texte-courant{
+    font-family: 'texte';
+    font-size: 12px;
+    padding: 0px;
+}
+
+.sous-titre{
+    font-family: 'textebold';
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.hr{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.nom{
+    font-family: 'necto';
+    font-size: 30px;
+
+}
+
+.categoriemoi{
+    font-family: 'necto';
+    font-size: 15px;
 }
 
 /*HEADER PRINCIPAL*/
@@ -114,9 +155,58 @@ body{
     gap:25px;
 }
 
-.insect_3{
-    align-items: end;
+/*GRID INFOS*/
+
+.grid-c4{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 120px;
+    max-width:1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+
 }
+
+
+.grid-c4p{
+    max-width:1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+    align-items: start;
+
+}
+
+.grid-c3{
+    max-width:1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:25px;
+
+}
+
+.grid-c2{
+    max-width:1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:25px;
+
+}
+
+.grid-accueil{
+    margin-left: 100px;
+    margin-right: 50px;
+    max-width:1300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:25px;
+
+}
+
+
+/* pour les colonnes span*/
+
 .span-4{
     grid-column: span 4;
 }
@@ -127,37 +217,14 @@ body{
 
 .span-2{
     grid-column: span 2;
-    
 }
 
 .span-1{
     grid-column: span 1;
-    align-items:end;
 }
 
 
 
-.texte-projet{
-    font-family: 'texte';
-    font-size: 12px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    padding: 0px;
-}
-
-.sous-titre{
-    font-family: 'textebold';
-    font-size: 12px;
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
-
-.hr{
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
 
 
 /* EFFETS SITE */
@@ -179,9 +246,9 @@ header a:hover{
 
 .item{
     /*font-family: 'necto';*/
-    font-size: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    font-size: 88px;
+    /*margin-left: 100px;
+    margin-right: 100px;*/
     padding:-200px;
     border-bottom:2px solid #000;
     background:rgb(255, 255, 255);
