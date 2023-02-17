@@ -237,7 +237,7 @@ body{
 
 header a:hover{
     color: #010101;
-    transform: translate(0,-10px)
+    transform: translate(0,-5px)
 }
 
 .gridsommaire{
@@ -278,3 +278,33 @@ header a:hover{
   .item:hover span{
     transform:none;
   }
+
+.img-fx{
+transition: 1s;
+filter: grayscale(1);
+}
+
+img:hover .img-fx{
+/* opacity:0.2; */
+filter:none;
+}
+
+.a-fx{
+display: grid;
+}
+
+
+.a-fx img,
+.a-fx p{
+grid-column: 1/-1;
+grid-row:  1/-1;
+transition: 0.7s;
+}
+
+.a-fx p{
+opacity: 0;
+}
+
+.a-fx:hover .img-preview{
+opacity: 0;
+} 
