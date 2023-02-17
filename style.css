@@ -27,6 +27,8 @@ a{
     text-decoration: none;
     color: currentColor;
 }
+
+video,
 img{
     display: block;
     max-width: 100%;
@@ -289,22 +291,18 @@ img:hover .img-fx{
 filter:none;
 }
 
-.a-fx{
+.header .a-fx{
 display: grid;
 }
 
 
-.a-fx img,
-.a-fx p{
+.header .a-fx img{
 grid-column: 1/-1;
 grid-row:  1/-1;
 transition: 0.7s;
 }
 
-.a-fx p{
-opacity: 0;
-}
 
-.a-fx:hover .img-preview{
-opacity: 0;
+.header .a-fx:hover img.img-preview{
+    opacity: 0;
 } 
