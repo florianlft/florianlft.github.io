@@ -144,14 +144,12 @@ body{
 .grid{
     margin-left: 100px;
     margin-right: 100px;
-    max-width:1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:25px;
 }
 
 .minigrid{
-    max-width:1200px;
     grid-template-rows:repeat(2, 250) ;
     display: grid;
     gap:25px;
@@ -163,7 +161,6 @@ body{
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 120px;
-    max-width:1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:25px;
@@ -172,7 +169,6 @@ body{
 
 
 .grid-c4p{
-    max-width:1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:10px;
@@ -181,7 +177,6 @@ body{
 }
 
 .grid-c3{
-    max-width:1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:25px;
@@ -189,7 +184,6 @@ body{
 }
 
 .grid-c2{
-    max-width:1200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:25px;
@@ -199,7 +193,6 @@ body{
 .grid-accueil{
     margin-left: 100px;
     margin-right: 50px;
-    max-width:1300px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:25px;
