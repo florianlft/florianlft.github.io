@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleimghover.css">
+    <style>
+    
+    .viewport {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .viewport:hover img {
+        opacity: 0;
+    }
+
+    .viewport:hover video {
+        opacity: 1;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    .fade {
+        transition: opacity .5s ease-in-out;
+    }
+
+    video {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+    }
+    </style>
+    </head>
+    
+<body>
+
+<div class="viewport">
+    <img class="fade" src="https://media-cdn.tripadvisor.com/media/photo-s/01/d6/68/97/mt-rainier-natl-park.jpg">
+
+    <video id="video" class="fade">
+    <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+    </video>
+
+    <!--
+    <div class="mask">hi</div>
+    -->
+
+</div>
+
+<script>
+    var viewport = document.getElementsByClassName('viewport')[0]
+    var video = document.getElementById('video')
+    viewport.addEventListener('mouseover', function() { video.play() }, false);
+    viewport.addEventListener('mouseout', function() { video.pause() }, false);
+</script>
+
+</body>
+</html>
