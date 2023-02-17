@@ -191,8 +191,8 @@ body{
 }
 
 .grid-accueil{
-    margin-left: 100px;
-    margin-right: 50px;
+    margin-right:10%;
+    margin-left:10%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:25px;
