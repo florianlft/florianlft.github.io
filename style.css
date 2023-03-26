@@ -191,7 +191,7 @@ body{
 }
 
 .grid-accueil{
-    margin-right:10%;
+   
     margin-left:10%;
     display: grid;
     grid-template-columns: 2fr 1fr;
