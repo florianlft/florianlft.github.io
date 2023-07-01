@@ -93,9 +93,8 @@ body{
     grid-template-columns:2fr auto auto;
     gap: 24px;
     align-items: center;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .header a{
@@ -137,6 +136,13 @@ body{
     font-family: 'necto';
     font-size: 15px;
     margin-bottom: 50px;
+}
+
+.fleche .p1{
+    font-family: 'necto';
+    font-size: 50px;
+    margin-right: 100px;
+    text-align: right;
 }
 
 /*GRID PROJET*/
@@ -191,8 +197,6 @@ body{
 }
 
 .grid-accueil{
-   
-    margin-left:10%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:25px;
@@ -240,16 +244,17 @@ header a:hover{
 }
 
 .item{
-    /*font-family: 'necto';*/
-    font-size: 550%;
-    /*margin-left: 100px;
-    margin-right: 100px;*/
-    padding:-200px;
+    font-family: 'necto';
+    font-size: 7.5vw;
+    padding:-1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     border-bottom:2px solid #000;
     background:rgb(255, 255, 255);
     z-index:1;
     background: rgba(255, 255, 255, 0.838);
     transition:0.5s;
+    size: 1vw;
   }
 
 .test{
@@ -262,7 +267,7 @@ header a:hover{
   
 .item span{
     display:inline-block;
-    transform:translate(0,50px);
+    transform:translate(0,4vw);
     transition:0.3s;
   }
   
@@ -298,4 +303,18 @@ transition: 0.7s;
 
 .header .a-fx:hover img.img-preview{
     opacity: 0;
-} 
+}
+
+@media screen and (max-width: 600px) {
+    .grid-c4{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:25px;
+    
+    }
+    
+
+}
