@@ -35,6 +35,10 @@ img{
     height:auto;
 }
 
+.imgphoto{
+    max-width: 100%;
+}
+
 .imgreseau{
     display: block;
     height:auto;
@@ -343,6 +347,10 @@ transition: 0.7s;
         gap:10px;
         align-items: start;
     
+    }
+
+    .imgphoto{
+        max-width: 100%;
     }
 
     
