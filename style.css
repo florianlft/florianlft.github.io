@@ -42,7 +42,6 @@ img{
 
 .imgreseau{
     display: block;
-    height:auto;
     float: left;
     padding: 5px;
 }
@@ -61,7 +60,7 @@ body{
 
 .texte-projet{
     font-family: 'texte';
-    font-size: 12px;
+    font-size: 1vw;
     margin-top: 30px;
     margin-bottom: 0;
     padding: 0px;
@@ -118,6 +117,7 @@ body{
     align-items: center;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 10px;
 }
 
 .header a{
@@ -223,6 +223,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:25px;
+    margin-top: 0.3vw;
 
 }
 
@@ -264,12 +265,12 @@ header a:hover{
 
 .gridsommaire{
     display:grid;
+    grid-column: span 1;
 }
 
 .item{
     font-family: 'necto';
-    font-size: 7.5vw;
-    padding:-1vw;
+    font-size: 6vw;
     margin-left: 3vw;
     margin-right: 3vw;
     border-bottom:2px solid #000;
@@ -277,7 +278,6 @@ header a:hover{
     z-index:1;
     background: rgba(255, 255, 255, 0.838);
     transition:0.5s;
-    size: 1vw;
   }
 
 .test{
@@ -286,6 +286,9 @@ header a:hover{
   
 .item.no-fx:hover{
       background: rgba(255, 255, 255, 0.971);
+      width:200px;
+      height:200px;
+      
   }
   
 .item span{
@@ -295,7 +298,8 @@ header a:hover{
   }
   
 .item:hover{
-    background: #fff;
+    background: #ffffff;
+
   }
 
   .item:hover span{
@@ -328,6 +332,7 @@ transition: 0.7s;
     opacity: 0;
 }
 
+
 @media screen and (max-width: 600px) {
     .grid-c4{
         margin-left: 5vw;
@@ -351,9 +356,74 @@ transition: 0.7s;
         grid-column: span 1;
     }
 
+    .span-3{
+        grid-column: span 1;
+    }
+
+    
+
+    .imgphotoaccueil{
+        max-width: 0vw;
+
+    }
+
     .imgphoto{
-        max-width: 50vw;
+        max-width: 150px;
+
+    }
+    
+
+    .gridsommaire{
+        grid-column: span 3;
+        margin-top: 5vw;
+
+    }
+
+    .item{
+        font-family: 'necto';
+        font-size: 6vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-top: 3vw;
+        border-bottom:1px solid #000;
+        background:none;
+        z-index:1;
+        background: none;
+        transition:none
+        size: 1vw;
+      }
+    
+    .test{
+        background: none;
+    }
+      
+    .item.no-fx:hover{
+          background: none
+      }
+      
+    .item span{
+        display:inline-block;
+        transform:none;
+        transition:none
+      }
+      
+    .item:hover{
+        background: none;
+      }
+    
+      .item:hover span{
+        transform:none;
+      }
+
+      .grid{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:25px;
     }
 
 
+
 }
+
