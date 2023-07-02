@@ -34,6 +34,13 @@ img{
     max-width: 100%;
     height:auto;
 }
+
+.imgreseau{
+    display: block;
+    height:auto;
+    float: left;
+    padding: 5px;
+}
 /*texte*/
 
 .strong{
@@ -84,6 +91,18 @@ body{
 .categoriemoi{
     font-family: 'necto';
     font-size: 15px;
+    text-align:start;
+}
+
+.pdf{
+    font-family: 'necto';
+    font-size: 15px;
+    text-align:end;
+}
+
+.sous-titre-contact{
+    font-family: 'necto';
+    font-size: 20px;
 }
 
 /*HEADER PRINCIPAL*/
@@ -315,6 +334,17 @@ transition: 0.7s;
         gap:25px;
     
     }
+    .span-2-mobile{
+        grid-column: span 2;
+    }
+    .grid-c4p{
+        display: grid;
+        grid-template-columns: 3fr;
+        gap:10px;
+        align-items: start;
+    
+    }
+
     
 
 }
