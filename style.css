@@ -37,6 +37,7 @@ img{
 
 .imgphoto{
     max-width: 100%;
+    float: left;
 }
 
 .imgreseau{
@@ -89,7 +90,6 @@ body{
 .nom{
     font-family: 'necto';
     font-size: 30px;
-
 }
 
 .categoriemoi{
@@ -101,7 +101,7 @@ body{
 .pdf{
     font-family: 'necto';
     font-size: 15px;
-    text-align:end;
+    text-align:start;
 }
 
 .sous-titre-contact{
@@ -189,7 +189,7 @@ body{
 .grid-c4{
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 120px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:25px;
@@ -332,7 +332,6 @@ transition: 0.7s;
     .grid-c4{
         margin-left: 5vw;
         margin-right: 5vw;
-        margin-top: 120px;
         display: grid;
         grid-template-columns: 1fr;
         gap:25px;
@@ -346,13 +345,15 @@ transition: 0.7s;
         grid-template-columns: 3fr;
         gap:10px;
         align-items: start;
-    
+    }
+
+    .span-2{
+        grid-column: span 1;
     }
 
     .imgphoto{
-        max-width: 100%;
+        max-width: 50vw;
     }
 
-    
 
 }
