@@ -60,7 +60,7 @@ body{
 
 .texte-projet{
     font-family: 'texte';
-    font-size: 1vw;
+    font-size: 0.9vw;
     margin-top: 30px;
     margin-bottom: 0;
     padding: 0px;
@@ -74,7 +74,7 @@ body{
 
 .sous-titre{
     font-family: 'textebold';
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -93,7 +93,7 @@ body{
 
 .categoriemoi{
     font-family: 'necto';
-    font-size: 15px;
+    font-size: 17px;
     text-align:start;
 }
 
@@ -302,9 +302,43 @@ header a:hover{
 
   }
 
-  .item:hover span{
+.item:hover span{
     transform:none;
   }
+
+.itemimg {
+    position: relative;
+    z-index: 0;
+}
+  
+.item img:hover {
+    background-color: transparent;
+    z-index: 50;
+}
+  
+.item img span {
+    /*CSS for enlarged image*/
+    position: absolute;
+    padding: 5px;
+    left: -1000x;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+}
+  
+.item img span img {
+    /*CSS for enlarged image*/
+    max-width: 20vw;
+    padding: 2px;
+}
+  
+.item img:hover span {
+    /*CSS for enlarged image on hover*/
+    visibility: visible;
+    top: -100px;
+    left: 100%; /*position where enlarged image should offset horizontally */
+}
+
 
 .img-fx{
 transition: 1s;
@@ -333,6 +367,9 @@ transition: 0.7s;
 }
 
 
+
+
+
 @media screen and (max-width: 600px) {
     .grid-c4{
         margin-left: 5vw;
@@ -357,6 +394,10 @@ transition: 0.7s;
     }
 
     .span-3{
+        grid-column: span 1;
+    }
+
+    .span-4{
         grid-column: span 1;
     }
 
@@ -422,6 +463,27 @@ transition: 0.7s;
         grid-template-columns: 1fr;
         gap:25px;
     }
+    
+    .projet-titre{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .texte-projet{
+        font-family: 'texte';
+        font-size: 2vw;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0px;
+    }
+
+    .minigrid{
+        grid-template-rows:1fr ;
+        display: grid;
+        gap:25px;
+    }
+    
+    
 
 
 
