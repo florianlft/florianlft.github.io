@@ -485,9 +485,16 @@ transition: 0.7s;
     
     .projet-titre .p1{
         font-family: 'necto';
-        font-size: 50px;
-        line-height: 1px;
         margin-bottom: 40px;
+        margin-top: 70px;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .projet-titre .p2{
+        font-family: 'necto';
+        margin-bottom: 40px;
+        text-align: center;
     }
     
 
