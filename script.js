@@ -1,15 +1,23 @@
 const items = document.querySelectorAll('.item');
 const cursorImage = document.querySelector('.cursorImage');
 
-document.addEventListener('mousemove', (event) => {
-  const imageSrc = event.target.closest('.item')?.getAttribute('data-img');
-  if (imageSrc) {
+items.forEach(item => {
+  const imageSrc = item.getAttribute('data-img'); // Remplacez data-img-src par data-img
+
+  item.addEventListener('mouseover', () => {
     cursorImage.innerHTML = `<img src="${imageSrc}" alt="Image">`;
     cursorImage.style.display = 'block';
-    cursorImage.style.left = (event.pageX - cursorImage.offsetWidth / 2) + 'px';
-    cursorImage.style.top = (event.pageY - cursorImage.offsetHeight / 2) + 'px';
-  } else {
+  });
+
+  item.addEventListener('mouseout', () => {
     cursorImage.innerHTML = '';
     cursorImage.style.display = 'none';
-  }
+  });
+
+  document.addEventListener('mousemove', (event) => {
+    const offsetX = 20;
+    const offsetY = 20;
+    cursorImage.style.left = (event.pageX + offsetX) + 'px';
+    cursorImage.style.top = (event.pageY + offsetY) + 'px';
+  });
 });
