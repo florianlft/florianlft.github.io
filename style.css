@@ -406,17 +406,17 @@ transition: 0.7s;
       
     .item.no-fx:hover{
           background: none
-      }
+    }
       
     .item span{
         display:inline-block;
         transform:none;
         transition:none
-      }
+    }
       
     .item:hover{
         background: none;
-      }
+    }
     
       .item:hover span{
         transform:none;
@@ -461,7 +461,6 @@ transition: 0.7s;
         font-family: 'necto';
         margin-bottom: 40px;
         text-align: center;
-<<<<<<< HEAD
     }
 
     .sous-titre{
@@ -470,8 +469,6 @@ transition: 0.7s;
         margin-top: 0;
         margin-bottom: 0;
     
-=======
->>>>>>> 6d1762ed4cc12d91e49bc5f2a90e095e2a3b42e1
     }
     
     .cursorImage img {
@@ -485,10 +482,6 @@ transition: 0.7s;
         pointer-events: none;
         z-index: 9999;
     }
-      
-      /* Ajoute cette règle pour que l'image au survol apparaisse au-dessus des autres éléments */
-    .item:hover img {
-        z-index: 1;
-    }
+    
 }
 
