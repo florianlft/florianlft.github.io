@@ -333,6 +333,24 @@ transition: 0.7s;
     opacity: 0;
 }
 
+.cursorImage img {
+    z-index: 9999; /* Mettre une valeur élevée pour placer l'image du curseur au-dessus des autres éléments */
+}
+  
+.cursorImage img {
+    position: absolute;
+    width: 50px; /* Personnalise la taille de l'image du curseur */
+    height: 50px; /* Personnalise la taille de l'image du curseur */
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursorImage {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -466,26 +484,7 @@ transition: 0.7s;
         margin-bottom: 0;
     
     }
-    
-    .cursorImage img {
-        z-index: 9999; /* Mettre une valeur élevée pour placer l'image du curseur au-dessus des autres éléments */
-    }
-      
-    .cursorImage img {
-        position: absolute;
-        width: 50px; /* Personnalise la taille de l'image du curseur */
-        height: 50px; /* Personnalise la taille de l'image du curseur */
-        pointer-events: none;
-        z-index: 9999;
-    }
 
-    .cursorImage {
-        position: fixed;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 9999;
-      }
     
 }
 

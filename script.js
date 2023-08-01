@@ -1,7 +1,8 @@
+const items = document.querySelectorAll('.item');
 const cursorImage = document.querySelector('.cursorImage');
 
 document.addEventListener('mousemove', (event) => {
-  const imageSrc = event.target.getAttribute('data-img');
+  const imageSrc = event.target.closest('.item')?.getAttribute('data-img');
   if (imageSrc) {
     cursorImage.innerHTML = `<img src="${imageSrc}" alt="Image">`;
     cursorImage.style.display = 'block';
