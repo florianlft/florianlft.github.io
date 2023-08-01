@@ -270,6 +270,7 @@ header a:hover{
 .gridsommaire{
     display:grid;
     grid-column: span 1;
+    margin-top: 50px;
 }
 
 .item{
@@ -332,22 +333,26 @@ transition: 0.7s;
 .header .a-fx:hover img.img-preview{
     opacity: 0;
 }
-  
+
+/* Pour les images des projets index */
 .cursorImage img {
-    position: absolute;
-    width: 50px; /* Personnalise la taille de l'image du curseur */
-    height: 50px; /* Personnalise la taille de l'image du curseur */
-    pointer-events: none;
-    z-index: 9999;
+    width: 9vw; /* Personnalise la taille de l'image du curseur */
+    height: 9vw; /* Personnalise la taille de l'image du curseur */
+    border-radius: 50%
 }
 
 .cursorImage {
-    position: fixed;
+    position: absolute;
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
 }
 
+
+.moleskine-gif img {
+    height: 200px; /* Ajustez la hauteur en fonction de vos besoins */
+    width: auto; /* Laissez le navigateur calculer automatiquement la largeur proportionnelle */
+}
 
 
 
@@ -483,4 +488,3 @@ transition: 0.7s;
 
     
 }
-
