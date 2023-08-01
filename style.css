@@ -404,10 +404,6 @@ transition: 0.7s;
         background: none;
     }
       
-    .item.no-fx:hover{
-          background: none
-    }
-      
     .item span{
         display:inline-block;
         transform:none;
@@ -482,6 +478,14 @@ transition: 0.7s;
         pointer-events: none;
         z-index: 9999;
     }
+
+    .cursorImage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 9999;
+      }
     
 }
 
