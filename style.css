@@ -433,11 +433,11 @@ transition: 0.7s;
         background: none;
     }
     
-      .item:hover span{
+    .item:hover span{
         transform:none;
-      }
+    }
 
-      .grid{
+    .grid{
         margin-left: 10px;
         margin-right: 10px;
         display: grid;
