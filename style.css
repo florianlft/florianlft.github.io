@@ -332,10 +332,6 @@ transition: 0.7s;
 .header .a-fx:hover img.img-preview{
     opacity: 0;
 }
-
-.cursorImage img {
-    z-index: 9999; /* Mettre une valeur élevée pour placer l'image du curseur au-dessus des autres éléments */
-}
   
 .cursorImage img {
     position: absolute;
