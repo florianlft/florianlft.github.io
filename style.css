@@ -115,9 +115,10 @@ body{
     grid-template-columns:2fr auto auto;
     gap: 24px;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 
 .header a{
@@ -141,6 +142,16 @@ body{
 .menu{   
     height: 40px;
     width: 40px;
+}
+
+/* INDEX */
+
+.portfolio{
+    font-family: 'necto';
+    font-size: 10vw;
+    margin-left: 2vw;
+    margin-top: 10px;
+    margin-bottom: 1px;
 }
 
 /* PAGE PROJET*/
@@ -222,9 +233,6 @@ body{
 .grid-accueil{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap:25px;
-    margin-top: 0.3vw;
-
 }
 
 
@@ -270,7 +278,6 @@ header a:hover{
 .gridsommaire{
     display:grid;
     grid-column: span 1;
-    margin-top: 50px;
 }
 
 .item{
@@ -353,6 +360,11 @@ transition: 0.7s;
     height: 200px; /* Ajustez la hauteur en fonction de vos besoins */
     width: auto; /* Laissez le navigateur calculer automatiquement la largeur proportionnelle */
 }
+
+.changecolor {
+    fill: green;
+}
+
 
 
 
