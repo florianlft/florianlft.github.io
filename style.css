@@ -292,13 +292,26 @@ header a:hover{
     transition:0.5s;
     position: relative; /* Ajout de cette ligne */
   }
+
+.itemlast{
+    font-family: 'necto';
+    font-size: 6vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-bottom:2px solid #000;
+    background:rgb(255, 255, 255);
+    z-index:1;
+    background: rgba(255, 255, 255, 0.838);
+    transition:0.5s;
+    position: relative; /* Ajout de cette ligne */
+}
   
 .item.no-fx:hover{
       background: rgba(255, 255, 255, 0.971);
       width:200px;
       height:200px;
       
-  }
+}
   
 .item span{
     display:inline-block;
