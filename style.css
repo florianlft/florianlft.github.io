@@ -290,7 +290,7 @@ header a:hover{
     z-index:1;
     background: rgba(255, 255, 255, 0.838);
     transition:0.5s;
-    position: relative; /* Ajout de cette ligne */
+    position: relative;
   }
 
 .itemlast{
@@ -356,8 +356,8 @@ transition: 0.7s;
 
 /* Pour les images des projets index */
 .cursorImage img {
-    width: 9vw; /* Personnalise la taille de l'image du curseur */
-    height: 9vw; /* Personnalise la taille de l'image du curseur */
+    width: 9vw; 
+    height: 9vw;
     border-radius: 50%
 }
 
@@ -370,8 +370,8 @@ transition: 0.7s;
 
 
 .moleskine-gif img {
-    height: 200px; /* Ajustez la hauteur en fonction de vos besoins */
-    width: auto; /* Laissez le navigateur calculer automatiquement la largeur proportionnelle */
+    height: 200px; 
+    width: auto;
 }
 
 .changecolor {
@@ -473,6 +473,7 @@ transition: 0.7s;
     .projet-titre{
         margin-left: 1vw;
         margin-right: 1vw;
+        margin-top: 10px;
     }
 
     .texte-projet{
@@ -510,6 +511,7 @@ transition: 0.7s;
         margin-bottom: 0;
     
     }
+
 
     
 }
