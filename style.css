@@ -356,8 +356,8 @@ transition: 0.7s;
 
 /* Pour les images des projets index */
 .cursorImage img {
-    width: 9vw; 
-    height: 9vw;
+    width: 15vw; 
+    height: 15vw;
     border-radius: 50%
 }
 
@@ -515,3 +515,4 @@ transition: 0.7s;
 
     
 }
+

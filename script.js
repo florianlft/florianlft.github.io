@@ -15,9 +15,22 @@ items.forEach(item => {
     });
 
     item.addEventListener('mousemove', (event) => {
-        const offsetX = 200;
+        const offsetX = 400;
         const offsetY = 0;
-        cursorImage.style.left = (event.pageX + offsetX) + 'px';
-        cursorImage.style.top = (event.pageY + offsetY) + 'px';
+        const cursorWidth = cursorImage.offsetWidth;
+        const cursorHeight = cursorImage.offsetHeight;
+        let posX = event.pageX + offsetX;
+        let posY = event.pageY + offsetY;
+
+        // Ensure the image stays within the viewport
+        if (posX + cursorWidth > window.innerWidth) {
+            posX = window.innerWidth - cursorWidth;
+        }
+        if (posY + cursorHeight > window.innerHeight + window.scrollY) {
+            posY = window.innerHeight + window.scrollY - cursorHeight;
+        }
+
+        cursorImage.style.left = posX + 'px';
+        cursorImage.style.top = posY + 'px';
     });
 });
